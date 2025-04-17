@@ -52,7 +52,21 @@ public class Main4 {
 
       switch (pilihMenu) {
         case 1:
+        System.out.println("\nDaftar Mahasiswa:");
+          System.out.printf("%-15s %-30s %-30s\n", "NIM", "Nama", "Prodi");
+          System.out.println("------------------------------------------------------------");
+          for (int i = 0; i < dataMahasiswa.length; i++) {
+            dataMahasiswa[i].tampilMahasiswa();
+          }
+          break;
         case 2:
+        System.out.println("\nDaftar Mahasiswa:");
+          System.out.printf("%-15s %-30s %-30s\n", "NIM", "Nama", "Prodi");
+          System.out.println("------------------------------------------------------------");
+          for (int i = 0; i < dataMahasiswa.length; i++) {
+            dataMahasiswa[i].tampilMahasiswa();
+          }
+          break;
         case 3:
         case 4:
         case 5:
