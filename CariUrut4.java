@@ -13,6 +13,10 @@ public class CariUrut4 {
       arrayPenilaian[j] = temp;
     }
 
+    // menampilkan hasil
+    for (int i = 0; i < arrayPenilaian.length; i++) {
+      System.out.printf("%-30s %-30s %.1f\n", arrayPenilaian[i].mahasiswa.nama, arrayPenilaian[i].mataKuliah.namaMK, arrayPenilaian[i].nilaiAkhir);
+    }
     
   }
 }
