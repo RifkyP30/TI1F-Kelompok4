@@ -63,11 +63,11 @@ public class Main4 {
           }
           break;
         case 2:
-        System.out.println("\nDaftar Mahasiswa:");
-          System.out.printf("%-15s %-30s %-30s\n", "NIM", "Nama", "Prodi");
+          System.out.println("\nDaftar Mata Kuliah:");
+          System.out.printf("%-10s %-30s %-5s\n", "Kode MK", "Nama", "SKS");
           System.out.println("------------------------------------------------------------");
-          for (int i = 0; i < dataMahasiswa.length; i++) {
-            dataMahasiswa[i].tampilMahasiswa();
+          for (int i = 0; i < dataMataKuliah.length; i++) {
+            dataMataKuliah[i].tampilMataKuliah();
           }
           break;
         case 3:
