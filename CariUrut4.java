@@ -18,16 +18,19 @@ public class CariUrut4 {
       System.out.printf("%-30s %-30s %.1f\n", arrayPenilaian[i].mahasiswa.nama, arrayPenilaian[i].mataKuliah.namaMK, arrayPenilaian[i].nilaiAkhir);
     }
 
-    void cariNimMahasiswa(Mahasiswa4[] arrayMahasiswa, String nimDicari) {
-        //mencari data NIM
-        boolean ketemu = false;
-        for (int i = 0; i < arrayMahasiswa.length; i++) {
-          if (arrayMahasiswa[i].NIM.equals(nimDicari)) {
-            ketemu = true;
-            System.out.println("Data ditemukan:");
-            System.out.println("NIM: " + arrayMahasiswa[i].NIM + " | Nama: " + arrayMahasiswa[i].nama + " | Prodi: " + arrayMahasiswa[i].prodi);
-          }
-        }
-      } 
+  void cariNimMahasiswa(Mahasiswa4[] arrayMahasiswa, String nimDicari) {
+    //mencari data NIM
+    boolean ketemu = false;
+    for (int i = 0; i < arrayMahasiswa.length; i++) {
+      if (arrayMahasiswa[i].NIM.equals(nimDicari)) {
+        ketemu = true;
+        System.out.println("Data ditemukan:");
+        System.out.println("NIM: " + arrayMahasiswa[i].NIM + " | Nama: " + arrayMahasiswa[i].nama + " | Prodi: " + arrayMahasiswa[i].prodi);
+      }
+    }
+
+    if (!ketemu) {
+      System.out.println("Data mahasiswa tidak ditemukan!");
+    }
   }
 }
