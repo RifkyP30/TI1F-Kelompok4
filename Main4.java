@@ -1,3 +1,4 @@
+import java.util.Scanner;
 
 public class Main4 {
   public static void main(String[] args) {
@@ -31,5 +32,36 @@ public class Main4 {
     dataPenilaian[3] = new Penilaian4(dataMahasiswa[1], dataMataKuliah[2], 84, 88, 90);
     dataPenilaian[4] = new Penilaian4(dataMahasiswa[2], dataMataKuliah[1], 85, 87, 93);
     dataPenilaian[5] = new Penilaian4(dataMahasiswa[2], dataMataKuliah[3], 77, 84, 86);
+  }
+
+  static void menu(Mahasiswa4[] dataMahasiswa, MataKuliah4[] dataMataKuliah, Penilaian4[] dataPenilaian, CariUrut4 dataCariUrut) {
+    Scanner input4 = new Scanner(System.in);
+    boolean menu = true;
+
+    while (menu) {
+      System.out.println("\n=== MENU SISTEM AKADEMIK ===");
+      System.out.println("1. Tampilkan Daftar Mahasiswa");
+      System.out.println("2. Tampilkan Daftar Mata Kuliah");
+      System.out.println("3. Tampilkan Data Penilaian");
+      System.out.println("4. Urutkan Mahasiswa Berdasarkan Nilai Akhir");
+      System.out.println("5. Cari Mahasiswa Berdasarkan NIM");
+      System.out.println("0. Keluar");
+      System.out.print("Pilih menu: ");
+      byte pilihMenu = input4.nextByte();
+      input4.nextLine();
+
+      switch (pilihMenu) {
+        case 1:
+        case 2:
+        case 3:
+        case 4:
+        case 5:
+        default:
+      }
+    }
+
+    System.out.println("\n=== TERIMA KASIH ===");
+
+    input4.close();
   }
 }
