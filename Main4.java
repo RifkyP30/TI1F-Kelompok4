@@ -68,9 +68,30 @@ public class Main4 {
           }
           break;
         case 3:
+          System.out.println("\nData Penilaian:");
+          System.out.printf("%-30s %-30s %-5s\n", "Nama", "Mata Kuliah", "Nilai Akhir");
+          System.out.println("------------------------------------------------------------");
+          for (int i = 0; i < dataPenilaian.length; i++) {
+            dataPenilaian[i].hitungNilaiAkhir();
+          }
+          break;
         case 4:
+          System.out.println("\nNilai Akhir:");
+          System.out.printf("%-30s %-30s %-5s\n", "Nama", "Mata Kuliah", "Nilai Akhir");
+          System.out.println("------------------------------------------------------------");
+          dataCariUrut.urutNilaiAkhir(dataPenilaian);
+          break;
         case 5:
+          System.out.println("\nCari Mahasiswa:");
+          System.out.print("Masukkan NIM mahasiswa yang dicari: ");
+          String nimDicari = input4.nextLine();
+          dataCariUrut.cariNimMahasiswa(dataMahasiswa, nimDicari);
+          break;
+        case 0:
+          menu = false;
+          break;
         default:
+          System.out.println("\ninput tidak valid!");
       }
     }
 
