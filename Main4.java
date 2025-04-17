@@ -32,6 +32,9 @@ public class Main4 {
     dataPenilaian[3] = new Penilaian4(dataMahasiswa[1], dataMataKuliah[2], 84, 88, 90);
     dataPenilaian[4] = new Penilaian4(dataMahasiswa[2], dataMataKuliah[1], 85, 87, 93);
     dataPenilaian[5] = new Penilaian4(dataMahasiswa[2], dataMataKuliah[3], 77, 84, 86);
+
+    menu(dataMahasiswa, dataMataKuliah, dataPenilaian, dataCariUrut);
+    
   }
 
   static void menu(Mahasiswa4[] dataMahasiswa, MataKuliah4[] dataMataKuliah, Penilaian4[] dataPenilaian, CariUrut4 dataCariUrut) {
