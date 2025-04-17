@@ -18,5 +18,18 @@ public class Main4 {
     dataMataKuliah[2] = new MataKuliah4("MK003", "Bahasa Inggris", 3);
     dataMataKuliah[3] = new MataKuliah4("MK004", "Desain Antarmuka", 3);
     dataMataKuliah[4] = new MataKuliah4("MK005", "Basis Data", 2);
+
+    // data penilaian
+    /*
+      1. Muhammad Daniel Assaqovi = Algoritma & Struktur Data, Basis Data
+      2. Muhammad Rifky Praditya = Aljabar Liner, Bahasa Inggris
+      3. Rachmad Febriananda = Aljabar Liner, Desain Antarmuka
+    */
+    dataPenilaian[0] = new Penilaian4(dataMahasiswa[0], dataMataKuliah[0], 80, 83, 87);
+    dataPenilaian[1] = new Penilaian4(dataMahasiswa[0], dataMataKuliah[4], 78, 82, 85);
+    dataPenilaian[2] = new Penilaian4(dataMahasiswa[1], dataMataKuliah[1], 82, 85, 87);
+    dataPenilaian[3] = new Penilaian4(dataMahasiswa[1], dataMataKuliah[2], 84, 88, 90);
+    dataPenilaian[4] = new Penilaian4(dataMahasiswa[2], dataMataKuliah[1], 85, 87, 93);
+    dataPenilaian[5] = new Penilaian4(dataMahasiswa[2], dataMataKuliah[3], 77, 84, 86);
   }
 }
